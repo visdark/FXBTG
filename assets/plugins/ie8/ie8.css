@@ -1,0 +1,10 @@
+/*
+ * visdark.com
+*/
+.style-switcher li, .style-switcher .btn-u, .style-switcher, .style-swticher-header ,.one-page-header,.top-contact-block i { z-index: 9; behavior: url(assets/plugins/ie8/PIE.htc) }
+i.style-switcher-btn { z-index: 2; behavior: url(assets/plugins/ie8/PIE.htc) }
+.fullSlide .hd li { z-index: 999; behavior: url(assets/plugins/ie8/PIE.htc); }
+.grow-rotate { -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.9975640502598243, M12=-0.06975647374412476, M21=0.06975647374412476, M22=0.9975640502598243, SizingMethod='auto expand')";  filter: progid:DXImageTransform.Microsoft.Matrix(  M11=0.9975640502598243,  M12=-0.06975647374412476,  M21=0.06975647374412476,  M22=0.9975640502598243,  SizingMethod='auto expand');margin-left: -4px; margin-top: -6px; }
+
+
+
