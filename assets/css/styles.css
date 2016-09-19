@@ -286,7 +286,7 @@ hr { border-color: #b9c4cC; margin: 80px 0 80px; }
 ---- Project Viewer ----
 -----------------------*/
 
-#project-viewer { background: url('../image/header-bg.png') no-repeat; background-attachment: fixed; background-size: 100%; background-size: cover; }
+#project-viewer { background: url('../image/header.png') no-repeat; background-attachment: fixed; background-size: 100%; background-size: cover; }
 #project-viewer .container { display: none; }
 #close-project-viewer { position: absolute; padding: 0 20px; right: 20px; top: 20px; font-size: 98px; line-height: 78px; font-weight: 100; cursor: pointer; -webkit-transition: color .2s ease-out; transition: color .2s ease-out; }
 #close-project-viewer:hover { color: #ec5307; }
