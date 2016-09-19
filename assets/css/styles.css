@@ -75,6 +75,9 @@ hr { border-color: #b9c4cC; margin: 80px 0 80px; }
 #site-nav a { padding: 10px; min-width: 70px; font-size: 16px; font-weight: 6400; color: #89949C; text-align: center; background: none; -webkit-transition: color .2s ease-out, padding .3s ease-out; transition: color .2s ease-out, padding .3s ease-out; }
 #site-nav .active a, #site-nav a:hover, #site-nav a:focus { padding-top: 4px; padding-bottom: 10px; color: #FF6601 !important; background: none; }
 #site-nav a .fa { display: block; margin-bottom: 5px; font-size: 21px; text-align: center; }
+#site-nav .xaa { padding: 10px; min-width: 70px; font-size: 16px; font-weight: 6400; color: #89949C; text-align: center; background: none; -webkit-transition: color .2s ease-out, padding .3s ease-out; transition: color .2s ease-out, padding .3s ease-out; }
+#site-nav .active .xaa, #site-nav .xaa:hover, #site-nav .xaa:focus { padding-top: 4px; padding-bottom: 10px; color: #FF6601 !important; background: none; }
+#site-nav .xaa .fa { display: block; margin-bottom: 5px; font-size: 21px; text-align: center; }
 #site-nav ul li + li { border-left: 1px solid #b9c4cC; }
 #main-nav.scrolled2 .container { padding-top: 12px; padding-bottom: 12px; }
 #main-nav.scrolled2 { background: #fff; border-bottom: 1px solid #b9c4cC; }
@@ -459,11 +462,19 @@ hr { border-color: #b9c4cC; margin: 80px 0 80px; }
 		padding: 7px 20px;
 		font-size: 14px;
 	}
+	#site-nav .xaa {
+		padding: 7px 20px;
+		font-size: 14px;
+	}
 }
 
 @media (max-width:991px) {
 	.navbar > .container .navbar-brand > img {width: 110px;}
 	#site-nav a {
+		padding: 7px 10px;
+		font-size: 14px;
+	}
+	#site-nav .xaa {
 		padding: 7px 10px;
 		font-size: 14px;
 	}
@@ -582,9 +593,11 @@ hr { border-color: #b9c4cC; margin: 80px 0 80px; }
 
 @media (min-width: 1150px) {
 #site-nav a { padding: 7px 15px; min-width: 100px; font-size: 16px; font-weight: 6400; color: #89949C; text-align: center; background: none; -webkit-transition: color .2s ease-out, padding .3s ease-out; transition: color .2s ease-out, padding .3s ease-out; }
+	#site-nav .xaa { padding: 7px 15px; min-width: 100px; font-size: 16px; font-weight: 6400; color: #89949C; text-align: center; background: none; -webkit-transition: color .2s ease-out, padding .3s ease-out; transition: color .2s ease-out, padding .3s ease-out; }
 }
 @media (min-width: 1200px) {
-	#site-nav a { padding: 7px 35px; min-width: 100px; font-size: 16px; font-weight: 6400; color: #89949C; text-align: center; background: none; -webkit-transition: color .2s ease-out, padding .3s ease-out; transition: color .2s ease-out, padding .3s ease-out; }
+	#site-nav a { padding: 7px 25px; min-width: 100px; font-size: 16px; font-weight: 6400; color: #89949C; text-align: center; background: none; -webkit-transition: color .2s ease-out, padding .3s ease-out; transition: color .2s ease-out, padding .3s ease-out; }
+	#site-nav .xaa { padding: 7px 25px; min-width: 100px; font-size: 16px; font-weight: 6400; color: #89949C; text-align: center; background: none; -webkit-transition: color .2s ease-out, padding .3s ease-out; transition: color .2s ease-out, padding .3s ease-out; }
 }
 #_hev_v{display: none}
 .p_checkbox a{

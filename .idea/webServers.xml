@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="593e023b-1d96-4d13-8f50-c87a4833cedb" name="FXBTG" url="http://w1.fxbtg-bank.com/">
+        <fileTransfer host="58.64.141.196" port="21" username="fxbtg">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
