@@ -88,14 +88,14 @@ hr { border-color: #b9c4cC; margin: 80px 0 80px; }
 -----------------------*/
 
 
-#home { position: relative; height: 100%; min-height: 860px; margin-bottom: -64px; background-repeat: no-repeat; background-image: url(../image/header-bg3.png); background-attachment: fixed; background-size: 100%; background-size: cover; overflow: hidden; }
+#home { position: relative; height: 100%; min-height: 860px; margin-bottom: -64px; background-repeat: no-repeat; background-image: url(../image/header-bg2.png); background-attachment: fixed; background-size: 100%; background-size: cover; overflow: hidden; }
 
 
 #home .container { position: fixed; width: 100%; height: 100%; min-height: 860px; z-index: 2; }
 #home .row { margin: 0; position: absolute; width: 100%; left: 0; top: 15%; }
 #home h1 { margin: 0; margin-bottom: 10px; font-size: 72px; font-weight: 400; color: #39444C; }
 #home h2 { margin: 0; margin-bottom: 30px; font-size: 32px; font-weight: 400; color: #89949C; }
-#home .header-img { position: absolute; bottom: 0; left: 50%; width: 900px; margin-left: -450px; z-index: -1; }
+#home .header-img { position: absolute;  left: 50%; width: 900px; margin-left: -450px; z-index: -1; }
 .scroll-down { margin-bottom: -60px; text-align: center; }
 .scroll-down a { display: inline-block; padding: 10px 50px; font-size: 18px; font-weight: 400; letter-spacing: .02em; color: #89949C; text-align: center; -webkit-transition: all .2s ease-out; transition: all .2s ease-out; }
 .scroll-down a:after { display: block; margin-top: -7px; content: "\f0d7"; font-family: fontAwesome; font-size: 21px; }
@@ -447,6 +447,7 @@ hr { border-color: #b9c4cC; margin: 80px 0 80px; }
 	top: 12%;
 }
 .skills .plus-symbol:after, .skills .equal-symbol:after { right: -60px; }
+#home .header-img { position: absolute;  left: 50%; width: 700px; margin-left: -350px; z-index: -1; }
 }
 
 @media (max-width:1199px) {
