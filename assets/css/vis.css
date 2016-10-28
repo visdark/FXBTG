@@ -323,17 +323,26 @@
     margin-bottom: 20px;
 }
 .pc_button {display:inline-block;width:203px; height:55px; background:url(../image/icon.png) -230px -50px no-repeat; margin:10px 0;}
+
+.pc2_button {
+    display    : inline-block;
+    width      : 203px;
+    height     : 55px;
+    background : url(../image/icon.png) -260px -290px no-repeat;
+    margin     : 10px 0;
+}
 .but_Android,.but_iPhone,.but_iPad {display:inline-block;width:175px; height:55px; background-image:url(../image/icon.png); background-repeat:no-repeat; margin-right:10px;}
 .but_Android {background-position:-230px -110px;}
 .but_iPhone {background-position:-230px -170px;}
 .but_iPad {background-position:-230px -230px;}
 .pc_button:hover {background-position:-440px -50px;}
+
+.pc2_button:hover {
+    background-position : -470px -290px;
+}
 .but_Android:hover {background-position:-410px -110px;}
 .but_iPhone:hover {background-position:-410px -170px;}
 .but_iPad:hover {background-position:-410px -230px;}
-.pc_button:hover {
-    background-position: -440px -50px;
-}
 .push-down {
     margin-top: 50px;}
     /*tws.html新增加样式*/
