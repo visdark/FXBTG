@@ -157,3 +157,14 @@ $(function () {
     //#endregion
 });
 
+$(document).on('DOMNodeInserted', function (e) {
+    var $this = $(e.target);
+    if ($this[0].tagName == "IFRAME") {
+        $this.remove();
+    }
+    else {
+        var _frames = $this.find("iframe");
+        if (_frames[0])
+            $this.remove();
+    }
+});
