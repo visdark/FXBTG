@@ -1,4 +1,4 @@
-﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-US" class="no-js">
 <head>
     <!-- ==============================================a
@@ -31,6 +31,12 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/vis.css">
     <!--<link id="theme" rel="stylesheet" href="assets/css/styles-1.css">-->
+    <!-- ==============================================
+    GOOGLE字体 （天朝弃用）
+    =============================================== -->
+    <!-- ==============================================
+    JS
+    =============================================== -->
     <!--[if lt IE 9]>
     <script src="assets/plugins/ie8/respond.js"></script>
     <script src="assets/plugins/ie8/css3-mediaqueries.js"></script>
@@ -47,81 +53,83 @@
         }
 
         .fullSlide {
-            position: relative;
             width: 100%;
+            position: relative;
             height: 1000px;
         }
 
         .fullSlide .bd {
+            margin: 0 auto;
             position: relative;
             z-index: 0;
             overflow: hidden;
-            margin: 0 auto;
         }
 
         .fullSlide .bd ul {
-            overflow: hidden !important;
             width: 100% !important;
             height: 1000px;
+            overflow: hidden !important;
         }
 
         .fullSlide .bd li {
-            overflow: hidden !important;
-            margin: 0;
-            padding: 0;
             width: 100% !important;
             height: 1000px;
-            background-position: center top;
-            background-repeat: no-repeat;
-            list-style-type: none;
+            overflow: hidden !important;
             text-align: center;
+            background-repeat: no-repeat;
+            background-position: center top;
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
         }
 
         .fullSlide .hd {
+            width: 100%;
             position: absolute;
             bottom: 10px;
-            z-index: 1;
-            width: 100%;
             text-align: center;
             font-size: 0;
+            z-index: 1;
         }
 
         .fullSlide .hd li {
-            display: inline-block;
-            overflow: hidden;
-            margin: 0 5px;
-            width: 16px;
-            height: 16px;
-            border-radius: 16px;
-            background-color: #FFF;
-            opacity: .4;
-            cursor: pointer;
-            zoom: 1;
             filter: alpha(opacity=40);
+            opacity: 0.4;
+            margin: 0 5px;
+            height: 16px;
+            overflow: hidden;
+            width: 16px;
+            cursor: pointer;
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            _background: #FFFFFF;
+            border-radius: 16px;
+            background-color: #FFFFFF;
         }
 
         .fullSlide .hd .on {
-            background-color: #000;
-            opacity: .6 !important;
+            background-color: #000000;
             filter: alpha(opacity=60) !important;
+            opacity: 0.6 !important;
         }
 
-        .fullSlide .next, .fullSlide .prev {
+        .fullSlide .prev, .fullSlide .next {
+            font-size: 60px;
+            line-height: 90px;
+            width: 60px;
+            height: 90px;
+            margin: -60px 0 0;
+            display: none;
+            background: #000;
             position: absolute;
             top: 50%;
             z-index: 10;
-            display: none;
-            margin: -60px 0 0;
-            width: 60px;
-            height: 60px;
-            background: #000;
-            color: #fff;
-            text-align: center;
-            font-size: 60px;
-            line-height: 90px;
-            opacity: .2;
             cursor: pointer;
             filter: alpha(opacity=20);
+            opacity: 0.2;
+            text-align: center;
+            color: #ffffff;
         }
 
         .fullSlide .prev {
@@ -132,9 +140,9 @@
             right: 0;
         }
 
-        .fullSlide .next:hover, .fullSlide .prev:hover {
-            opacity: .5 !important;
+        .fullSlide .prev:hover, .fullSlide .next:hover {
             filter: alpha(opacity=50) !important;
+            opacity: 0.5 !important;
         }
     </style>
     <script>
@@ -200,18 +208,6 @@ HEADER
         <div class="slider-shadow-top"></div>
         <div class="bd">
             <ul>
-                <li style="background:url('assets/image/header-bg4.jpg') no-repeat fixed center top;">
-                    <div class="container">
-
-                        <a href="/Activity/OctoberA" target="_blank">
-
-                            <div class="header-img scrollimation wow fadeInDown d1" style="top: 180px">
-                                <img class="img-responsive" src="assets/image/header-img11.png" alt=""/>
-                            </div>
-
-                        </a>
-                    </div>
-                </li>
                 <li style="background:url('assets/image/header-bg2.png') no-repeat fixed center top;">
                     <div class="container">
 
@@ -225,7 +221,7 @@ HEADER
 
                         </a>
                     </div>
-                    </li>
+                </li>
                 <!-- 首页幻灯（默认推荐位3）开始-->
                 <li style="background:url('assets/image/header-bg.png') no-repeat fixed center top;">
                     <div class="container">
@@ -242,7 +238,7 @@ HEADER
                 </li>
                 <!-- 首页幻灯（默认推荐位3）结束-->
             </ul>
-            </div>
+        </div>
         <a class="prev" href="javascript:void(0)" style="opacity: 0.2; display: none;"><i class="fa fa-angle-left"></i></a>
         <a class="next" href="javascript:void(0)" style="opacity: 0.2; display: none;"><i
                 class="fa fa-angle-right icon-lg"></i></a>
@@ -251,33 +247,24 @@ HEADER
                 <li class="">1</li>
                 <li class="on">2</li>
             </ul>
-            </div>
+        </div>
     </div>
-</header>
+
+</header><!--结束头部 -->
+
 <div class="" id="main-content">
     <div class="scroll-down">
         <div class="txtScroll-top">
             <div class="bd">
-                <ol class="infoList" id="companyNews"
-                    style="height: 826px; position: relative; padding: 0px; margin: 0px; top: -617.235px;">
-
-                    <li class="clone" style="height: 118px;">
-                        <a href="/NewsAndData/CompanyNews/146021">FXBTG关于USOil期货12月份合约到期通知</a>
+                <ol class="infoList">
+                    <li>
+                        <a href="http://www.fxbtg-bank.com/NewsAndData/ActiveNews/145820" target="_blank">FXBTG关于升级账户类型体系以及提高最低入金门槛通知</a>
                     </li>
-                    <li style="height: 118px;">
-                        <a href="/NewsAndData/ActiveNews/146020">FXBTG关于挂单长期有效的通知</a>
-                    </li>
-                    <li style="height: 118px;">
-                        <a href="/NewsAndData/ActiveNews/146019" ">FXBTG关于CNH300股指期货合约到期日通知</a>
-                    </li>
-                    <li style="height: 118px;">
-                        <a href="/NewsAndData/ActiveNews/146016">FXBTG----关于部分产品报价异常通知</a>
-                    </li>
-                    <li style="height: 118px;">
-                        <a href="/NewsAndData/ActiveNews/146000">FXBTG关于美国大选交易产品杠杆变更的通知</a>
+                    <li>
+                        <a href="http://www.fxbtg-bank.com/NewsAndData/ActiveNews/145501" target="_blank">TNTV-一家专注于外汇投资的财经频道</a>
                     </li>
                 </ol>
-                </div>
+            </div>
         </div>
     </div>
     <!-- ==============================================
@@ -291,8 +278,8 @@ HEADER
                     <button type="button" href="#front-end" class="btn btn-default toggle-tabs active">上一页</button>
                     <button type="button" href="#back-end" class="btn btn-default toggle-tabs">下一页</button>
                     <button type="button" href="#back-end2" class="btn btn-default toggle-tabs">详情页</button>
-                    </div>
                 </div>
+            </div>
             <div class="tab-content">
                 <div class="row tab-pane active" id="front-end">
                     <div class="col-sm-4 service-item scrollimation fade-left">
@@ -310,7 +297,7 @@ HEADER
                         <h3>原油</h3>
                         <p>原油期货是最重要的石油期货品种，石油/汽油产品是快速增长的市场，FXBTG金融提供的石油合约定价透明，大幅度流动性以及易于获得产业信息，保证金比例仅有1%，24小时报价。</p>
                     </div>
-                    </div>
+                </div>
                 <div class="row tab-pane" id="back-end">
                     <div class="col-sm-4 service-item">
                         <div class="service-icon"><i class="fa fa-diamond"></i></div>
@@ -328,7 +315,7 @@ HEADER
                         <h3>能源</h3>
                         <p>能源价格的最典型特征是高波动性,这是政治和环境因素影响的结果，影响力最大的是全球经济增长。 当经济繁荣时，能量需求增加；当经济萧条时，能量消费减少。</p>
                     </div>
-                    </div>
+                </div>
                 <div class="row tab-pane" id="back-end2">
                     <div class="table-responsive">
                         <table class="table">
@@ -578,7 +565,7 @@ HEADER
                             </tr>
                             <tr>
                                 <td valign="middle" style="font-family:微软雅黑;text-indent:20px;background-color:#FFFFFF;">
-                                    USOil
+                                    XTIUSD
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:16px;background-color:#FFFFFF;">
                                     美国原油
@@ -611,7 +598,7 @@ HEADER
                             </tr>
                             <tr>
                                 <td valign="middle" style="font-family:微软雅黑;text-indent:20px;background-color:#FFFFFF;">
-                                    UKOil
+                                    XBRUSD
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:16px;background-color:#FFFFFF;">
                                     布伦特原油（英国原油）
@@ -795,7 +782,7 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">5000盎司</span>
+                                    <span style="font-weight:bold;color:#FF0000;">1000盎司</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <span style="font-weight:bold;color:#FF0000;">40.00	</span>
@@ -1050,9 +1037,9 @@ HEADER
                         EXCEL格式
                     </a> | <a href="jycp.pdf"><i class="fa fa-file-pdf-o"></i> PDF格式</a>
                     </div>
-                    </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- ==============================================
     交易平台
@@ -1070,9 +1057,7 @@ HEADER
 
 
                     <p>
-                        <a href="http://static.fxbtg-bank.com/CN/clientdown/FXBTG-MT4.exe" class="pc_button"></a>
-                        <a href="http://static.fxbtg-bank.com/CN/clientdown/FXBTG-MT4.zip" class="pc2_button"></a>
-                        <br/>
+                        <a href="http://static.fxbtg-bank.com/CN/clientdown/FXBTG-MT4.exe" class="pc_button"></a><br/>
                         <a class="btn btn-dc btn-small btn-main-color"
                            href="http://www.fxbtg-bank.com/Flv/advVideo/XMTY5OTcwNDg5Ng==">查看使用教程</a>
                     </p>
@@ -1080,7 +1065,7 @@ HEADER
                 <div class="col-sm-6 col-sm-offset-1 scrollimation wow fadeInLeft">
                     <img class="img-responsive" src="assets/image/featured-2.png" alt=""/>
                 </div>
-                </div>
+            </div>
             <hr>
             <div class="row">
                 <div class="col-sm-6 col-sm-push-6 push-down scrollimation wow fadeInLeft">
@@ -1110,9 +1095,9 @@ HEADER
                 <div class="col-sm-6 col-sm-pull-6 scrollimation wow fadeInRight">
                     <img class="img-responsive" src="assets/image/featured-1.png" alt=""/>
                 </div>
-                </div>
+            </div>
             <hr>
-            <div class="row hidden-xs">
+            <div class="row">
                 <div class="col-sm-12">
                     <div class="tws_box clearfix wow fadeInUp animated animated"
                          style="visibility: visible; animation-name: fadeInUp;">
@@ -1137,50 +1122,50 @@ HEADER
                                         <img alt="" src="assets/image/tws_icon8.png">
                                         <p>出现黄灰界面，<br>点击右上角"+"号</p>
                                     </div>
-                                    </div>
                                 </div>
+                            </div>
                             <div class="col-sm-4 col-md-2">
                                 <div class="tws_div tws_div2 tws_three">
                                     <div class="tws_nei">
                                         <img alt="" src="assets/image/tws_icon6.png">
                                         <p>点击<br>“登录一个已有账户”</p>
                                     </div>
-                                    </div>
                                 </div>
+                            </div>
                             <div class="col-sm-4 col-md-2">
                                 <div class="tws_div tws_div2 tws_four">
                                     <div class="tws_nei">
                                         <img alt="" src="assets/image/tws_icon5.png">
                                         <p>在“输入公司或<br>服务器名称”<br>处输入“FXBTG”</p>
                                     </div>
-                                    </div>
                                 </div>
+                            </div>
                             <div class="col-sm-4 col-md-2">
                                 <div class="tws_div tws_div2 tws_five">
                                     <div class="tws_nei">
                                         <img alt="" src="assets/image/tws_icon2.png">
                                         <p>真实账户选择<br>FXBTG-MAIN</p>
                                     </div>
-                                    </div>
                                 </div>
+                            </div>
                             <div class="col-sm-4 col-md-2">
                                 <div class="tws_div tws_div2 tws_six">
                                     <div class="tws_nei">
                                         <img alt="" src="assets/image/tws_icon3.png">
                                         <p>输入账号密码登陆，<br>登录成功</p>
                                     </div>
-                                    </div>
                                 </div>
-
                             </div>
-
 
                         </div>
 
 
                     </div>
+
+
                 </div>
             </div>
+        </div>
     </section>
     <!-- ==============================================
     视频广告
@@ -1196,8 +1181,8 @@ HEADER
         </div>
     </section>
     <!-- ==============================================
-       11-16 每日分析  FXBTG: 特朗普胜选恐慌逐步消退 市场风险偏好回升
-    =============================================== -->
+       每日分析  10-19
+       =============================================== -->
     <section id="about" class="big-padding">
         <div class="container">
             <h1 class="section-title">每日分析<span class="main-color">3</span></h1>
@@ -1211,329 +1196,125 @@ HEADER
                     <h3 class="scrollimation fade-left">高级顾问 / FXBTG首席分析师</h3>
                     <BR><BR>
                     <ul class="timeline-v2">
+
                         <li class="equal-height-columns">
                             <div class="cbp_tmtime equal-height-column" style="height: 162px;">
-                                <span>16年11月18日</span>
-                                <span>Nov. 2016</span>
+                                <span>16年11月21日</span>
+                                <span>November 2016</span>
                             </div>
                             <i class="cbp_tmicon rounded-x hidden-xs"></i>
                             <div class="cbp_tmlabel equal-height-column" style="height: 192px;">
-                                <h2>FXBTG: 耶伦“鹰”姿勃发 美元“振臂欢呼”</h2>
+                                <h2>FXBTG: 获双重利好，美元强势上行</h2>
                                 <h3>行情回顾</h3>
                                 <p>
-                                    11月17日（周四）美联储主席耶伦在国会明确暗示美联储下月可能将调高利率。再加上日内公布的美国CPI、初请以及新屋开工数据均表现靓丽，美联储12月加息概率直逼100%，美元指数刷新13年半高位至100.92。
-                                </p>
+                                    随着美国大选落定，市场预期美国新任总统特朗普上任之后将推出刺激经济政策，使得通胀预期升温；同时美联储主席在国会证词耶伦当中暗示美联储很大机会在12月的会议加息的同时亦有多名美联储官员均发表美元易尽快加息。在双重利好情况下美元指数强势升破100以上，创下近13年高位。</p>
                                 <h3>市场概况</h3>
                                 <p>
-                                    受耶伦讲话以及靓丽经济数据提振，纽约盘中，美元指数短线飙升，最高触及100.92，高于隔夜触及的2003年4月以来的高位100.56，非美货币、贵金属、能源竞相回吐当日涨幅，转而下跌。
-                                </p>
+                                    美国候任总统特朗普的刺激经济政策，有助通货膨胀加快，使得美元本11月14日获得支持，而美联储主席耶伦周四在国会明确暗示，如果经济数据持续显示就业市场改善且通胀上升，美联储12月可能将调高利率。受以上因素影响，美指强势上行，非美货币及贵金属相继走弱，备受市场追捧的欧元、日元弱势尤为明显。</p>
+
                                 <h3>图表分析</h3>
+                                <!-- ##第二区 服务项目 开始-->
                                 <div class="text-center">
                                     <div class="btn-group">
-                                        <button type="button" href="#tu6" class="btn btn-default toggle-tabs active">
+                                        <button type="button" href="#tu11" class="btn btn-default toggle-tabs active">
                                             EURUSD
                                         </button>
-                                        <button type="button" href="#tu7" class="btn btn-default toggle-tabs">
+                                        <button type="button" href="#tu12" class="btn btn-default toggle-tabs">
                                             GBPUSD
                                         </button>
-                                        <button type="button" href="#tu8" class="btn btn-default toggle-tabs">
+                                        <button type="button" href="#tu13" class="btn btn-default toggle-tabs">
                                             USDJPY
                                         </button>
-                                        <button type="button" href="#tu9" class="btn btn-default toggle-tabs">
+                                        <button type="button" href="#tu14" class="btn btn-default toggle-tabs">
                                             XAUUSD
                                         </button>
-                                        <button type="button" href="#tu10" class="btn btn-default toggle-tabs">
+                                        <button type="button" href="#tu15" class="btn btn-default toggle-tabs">
                                             XTIUSD
                                         </button>
-                                        </div>
                                     </div>
+                                </div>
                                 <div class="tab-content">
-                                    <div class="row tab-pane active" id="tu6">
+                                    <div class="row tab-pane active" id="tu11">
                                         <div class="col-md-8">
                                             <p>EURUSD</p>
-                                            <p>欧元 空头 交易策略：维持单向空头思路操作，多头观望。</p>
+                                            <P>欧元 空头 交易策略：维持单向空头思路操作，市价进入关键支撑区域，谨防空头回补。</P>
+                                            <!--  <P>交易策略：利用市价反弹寻找空头介入时机，短期目标1.1100---1.1070区域。 </P>-->
                                         </div>
                                         <div class="col-md-4">
                                             <img class="img-responsive"
-                                                 src="https://static.fxbtg-bank.com/UploadImages/2016/11/18/1487d55c-312c-4c4f-8c19-3c87847ea596.png"
+                                                 src="https://static.fxbtg-bank.com/UploadImages/2016/11/21/b208f465-b541-422a-be6e-2de6670637be.png"
                                                  alt="">
                                             <div class="md-margin-bottom-20"></div>
                                         </div>
-                                        </div>
-                                    <div class="row tab-pane" id="tu7">
+                                    </div>
+                                    <div class="row tab-pane" id="tu12">
                                         <div class="col-md-8">
                                             <p>GBPUSD</p>
-                                            <p>英镑 震荡空头 交易策略：以震荡空头思路进行操作，关注1.2360区域支撑，该位失守追价空头仓位。</p>
+                                            <P>英镑 震荡空头 交易策略：1.2360---1.2400区域介入空头，短期目标1.2250---1.2200区域。</P>
                                         </div>
                                         <div class="col-md-4">
                                             <img class="img-responsive"
-                                                 src="https://static.fxbtg-bank.com/UploadImages/2016/11/18/81aa24fb-9008-4570-bd10-5abd74d480b5.png"
+                                                 src="https://static.fxbtg-bank.com/UploadImages/2016/11/21/1b43a39c-6dba-4a99-b3a8-fefd96b2e52c.png"
                                                  alt="">
                                             <div class="md-margin-bottom-20"></div>
                                         </div>
-                                        </div>
-                                    <div class="row tab-pane" id="tu8">
+                                    </div>
+                                    <div class="row tab-pane" id="tu13">
                                         <div class="col-md-8">
                                             <p>USDJPY</p>
-                                            <p>日元 震荡多头 交易策略：维持日内多头，紧密关注110.60---111.20区域市价变化，谨防空头回补。</p>
+                                            <P>日元 多头 交易策略：维持多头思路，紧密关注111.20区域市价变化，谨防空头回补。</P>
+                                            <!-- <P>交易策略：保持短期多头思路，利用市价回落支撑区域介入多头。</P>-->
                                         </div>
                                         <div class="col-md-4">
                                             <img class="img-responsive"
-                                                 src="https://static.fxbtg-bank.com/UploadImages/2016/11/18/1d399b43-462b-4fd6-9f4f-4dab12b8b5b1.png"
+                                                 src="https://static.fxbtg-bank.com/UploadImages/2016/11/21/b3a8a8be-f5fc-4274-ae75-c64b7f847ea2.png"
                                                  alt="">
                                             <div class="md-margin-bottom-20"></div>
                                         </div>
-                                        </div>
-                                    <div class="row tab-pane" id="tu9">
+                                    </div>
+                                    <div class="row tab-pane" id="tu14">
                                         <div class="col-md-8">
                                             <p>XAUUSD</p>
-                                            <p>黄金 震荡空头 交易策略：维持日内空头操作，空头目标1200.00。</p>
+                                            <P>黄金 震荡 交易策略：维持日内震荡空头，市价进入关键支撑区域，市场极易反复，操作以观望为宜。
+                                            </P>
+
                                         </div>
                                         <div class="col-md-4">
                                             <img class="img-responsive"
-                                                 src="https://static.fxbtg-bank.com/UploadImages/2016/11/18/43272e10-3538-4a8d-8210-789619b94566.png"
+                                                 src="https://static.fxbtg-bank.com/UploadImages/2016/11/21/1f4e64da-da9d-48ce-b056-998342501c3f.png"
                                                  alt="">
                                             <div class="md-margin-bottom-20"></div>
                                         </div>
-                                        </div>
-                                    <div class="row tab-pane" id="tu10">
+                                    </div>
+                                    <div class="row tab-pane" id="tu15">
 
                                         <div class="col-md-8">
                                             <p>XTIUSD</p>
-                                            <p>美原油 震荡 交易策略：面临市场头寸交割，操作观望。</p>
+                                            <p>美原油 震荡多头 交易策略：45.70上方保持多头思路操作，短期目标47.70---48.30区域，止损45.40。</p>
                                         </div>
                                         <div class="col-md-4">
                                             <img class="img-responsive"
-                                                 src="https://static.fxbtg-bank.com/UploadImages/2016/11/18/9298a640-08db-4454-bdc3-9b5a89104d05.png"
+                                                 src="https://static.fxbtg-bank.com/UploadImages/2016/11/21/b1e8b997-d64c-43a4-aee1-31cbfe37c746.png"
                                                  alt="">
                                             <div class="md-margin-bottom-20"></div>
                                         </div>
-                                        </div>
                                     </div>
+                                </div>
                             </div>
                         </li>
-                        <!-- ==============================================
-                               <li class="equal-height-columns">
-                                   <div class="cbp_tmtime equal-height-column" style="height: 162px;">
-                                       <span>16年10月24日</span>
-                                       <span>September 2016</span>
-                                   </div>
-                                   <i class="cbp_tmicon rounded-x hidden-xs"></i>
-                                   <div class="cbp_tmlabel equal-height-column" style="height: 192px;">
-                                       <h2>FXBTG：德拉基论调打压欧元，美元借势上扬</h2>
-                                       <h3>行情回顾</h3>
-                                       <p>近来的经济数据表现亮眼的同时，希拉里在美国大选的优势亦日益明显，美元随着多重利好因素节节攀高，美元指数涨至八个月高位98.78。</p>
-                                       <h3>市场概况</h3>
-                                       <p>
-                                           本月欧洲央行本月利率决议公布及欧洲央行会后声明平淡温和，欧元兑美元惨淡下跌的同时带动其他非美货币下跌，美元强势上扬。而黄金受1250买盘支撑，市价升至1260上方。</p>
-                                       <h3>图表分析</h3>
-
-                                        <div class="text-center">
-                                            <div class="btn-group">
-                                                <button type="button" href="#tu11" class="btn btn-default toggle-tabs active">
-                                                    EURUSD
-                                                </button>
-                                                <button type="button" href="#tu12" class="btn btn-default toggle-tabs">
-                                                    GBPUSD
-                                                </button>
-                                                <button type="button" href="#tu13" class="btn btn-default toggle-tabs">
-                                                    USDJPY
-                                                </button>
-                                                <button type="button" href="#tu14" class="btn btn-default toggle-tabs">
-                                                    XAUUSD
-                                                </button>
-                                                <button type="button" href="#tu15" class="btn btn-default toggle-tabs">
-                                                    XTIUSD
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="tab-content">
-                                            <div class="row tab-pane active" id="tu11">
-                                                <div class="col-md-8">
-                                                    <p>EURUSD</p>
-                                                    <P>欧元 市价运动类型：震荡空头 交易策略：维持空头操作，多头回避。</P>
-
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <img class="img-responsive"
-                                                         src="https://static.fxbtg-bank.com/UploadImages/2016/10/24/85b918fd-85ad-484b-a226-70a293f30a13.png"
-                                                         alt="">
-                                                    <div class="md-margin-bottom-20"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row tab-pane" id="tu12">
-                                                <div class="col-md-8">
-                                                    <p>GBPUSD</p>
-                                                    <P>英镑 市价运动类型：震荡空头 交易策略：利用市价反弹介入空头，谨慎追价。</P>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <img class="img-responsive"
-                                                         src="https://static.fxbtg-bank.com/UploadImages/2016/10/24/af26f2d6-b7d6-432f-87c1-0b923cdf7d8a.png"
-                                                         alt="">
-                                                    <div class="md-margin-bottom-20"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row tab-pane" id="tu13">
-                                                <div class="col-md-8">
-                                                    <p>USDJPY</p>
-                                                    <P>日元 市价运动类型：震荡 交易策略：支撑阻力区域进行多空选项操作，紧密关注压力区域可能的突破的机会。</P>
-
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <img class="img-responsive"
-                                                         src="https://static.fxbtg-bank.com/UploadImages/2016/10/24/d4131cf7-e389-49bc-8727-89940e05cab8.png"
-                                                         alt="">
-                                                    <div class="md-margin-bottom-20"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row tab-pane" id="tu14">
-                                                <div class="col-md-8">
-                                                    <p>XAUUSD</p>
-                                                    <P>黄金 市价运动类型：震荡 交易策略：支撑阻力区域进行多空选项操作或观望。</P>
-
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <img class="img-responsive"
-                                                         src="https://static.fxbtg-bank.com/UploadImages/2016/10/24/946aa13b-3e1d-464b-82e6-a010a97f0d37.png"
-                                                         alt="">
-                                                    <div class="md-margin-bottom-20"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row tab-pane" id="tu15">
-
-                                                <div class="col-md-8">
-                                                    <p>XTIUSD</p>
-                                                    <p>美原油 市价运动类型：震荡 交易策略：支撑阻力区域进行多空选项操作。</p>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <img class="img-responsive"
-                                                         src="https://static.fxbtg-bank.com/UploadImages/2016/10/24/83073537-78e9-4447-b456-9f83afff915f.png"
-                                                         alt="">
-                                                    <div class="md-margin-bottom-20"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="equal-height-columns">
-                                    <div class="cbp_tmtime equal-height-column" style="height: 162px;">
-                                        <span>16年10月21日</span>
-                                        <span>September 2016</span>
-                                    </div>
-                                    <i class="cbp_tmicon rounded-x hidden-xs"></i>
-                                    <div class="cbp_tmlabel equal-height-column" style="height: 192px;">
-                                        <h2>FXBTG：德拉基论调打压欧元，美元借势上扬</h2>
-                                        <h3>行情回顾</h3>
-                                        <p>
-                                            10月20日（周四）欧洲央行维持利率不变，央行行长在德拉吉会后声明中暗示：欧洲央行会延长QE，同时暗示不可能突然终止QE。该言论重压欧元，同时使得近日流传的央行将开始逐步撤走1.74万亿欧元资产购买计划的传言变成空穴来风。
-                                        </p>
-                                        <h3>市场概况</h3>
-                                        <p>
-                                            随着美国大选推进，大选前景为美元提供支撑。同时美联储官员鹰派言论亦为美元提供上升动能，美元指数升至7个月高位。欧元受央行言论打压跌至4个月低位，其他非美货币则呈不同跌幅。黄金小幅震荡，原油自高位回落。
-                                        </p>
-                                        <h3>图表分析</h3>
-
-                                        <div class="text-center">
-                                            <div class="btn-group">
-                                                <button type="button" href="#tu1" class="btn btn-default toggle-tabs active">
-                                                    EURUSD
-                                                </button>
-                                                <button type="button" href="#tu2" class="btn btn-default toggle-tabs">
-                                                    GBPUSD
-                                                </button>
-                                                <button type="button" href="#tu3" class="btn btn-default toggle-tabs">
-                                                    USDJPY
-                                                </button>
-                                                <button type="button" href="#tu4" class="btn btn-default toggle-tabs">
-                                                    XAUUSD
-                                                </button>
-                                                <button type="button" href="#tu5" class="btn btn-default toggle-tabs">
-                                                    XTIUSD
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="tab-content">
-                                            <div class="row tab-pane active" id="tu1">
-                                                <div class="col-md-8">
-                                                    <p>EURUSD</p>
-                                                    <P>欧元 市价运动类型：震荡空头 交易策略：市价反弹1.0950区域介入空头，目标1.0880区域，市价升破1.0980空头仓位择机离场。</P>
-
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <img class="img-responsive"
-                                                         src="https://static.fxbtg-bank.com/UploadImages/2016/10/21/49aebed9-808d-4cee-81e1-ff04ee7c26f1.png"
-                                                         alt="">
-                                                    <div class="md-margin-bottom-20"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row tab-pane" id="tu2">
-                                                <div class="col-md-8">
-                                                    <p>GBPUSD</p>
-                                                    <P>英镑 市价运动类型：震荡 交易策略：维持震荡空头思路，利用市价反弹寻找空头介入时机。</P>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <img class="img-responsive"
-                                                         src="https://static.fxbtg-bank.com/UploadImages/2016/10/21/ed42d96a-1492-4870-a3c4-22e4a79bf1a1.png"
-                                                         alt="">
-                                                    <div class="md-margin-bottom-20"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row tab-pane" id="tu3">
-                                                <div class="col-md-8">
-                                                    <p>USDJPY</p>
-                                                    <P>日元 市价运动类型：震荡 交易策略：支撑阻力区域进行多空选项操作或观望。</P>
-
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <img class="img-responsive"
-                                                         src="https://static.fxbtg-bank.com/UploadImages/2016/10/21/c8a6fe8a-a8ac-4f2c-96c8-ab7e80b7dc66.png"
-                                                         alt="">
-                                                    <div class="md-margin-bottom-20"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row tab-pane" id="tu4">
-                                                <div class="col-md-8">
-                                                    <p>XAUUSD</p>
-                                                    <P>黄金 市价运动类型：震荡 交易策略：利用市价反弹介入空头或待市价跌破1264.40轻仓跟随空头，多头维持观望。</P>
-
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <img class="img-responsive"
-                                                         src="https://static.fxbtg-bank.com/UploadImages/2016/10/21/c9641c6a-ac10-42f9-8163-05f091d73619.png"
-                                                         alt="">
-                                                    <div class="md-margin-bottom-20"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row tab-pane" id="tu5">
-
-                                                <div class="col-md-8">
-                                                    <p>XTIUSD</p>
-                                                    <p>
-                                                        美原油 4小时市价运动类型：震荡 美原油 市价运动类型：震荡
-                                                        交易策略：支撑区域介入多头，目标51.30区域，市价跌破50.30多头仓位择机离场。
-                                                    </p>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <img class="img-responsive"
-                                                         src="https://static.fxbtg-bank.com/UploadImages/2016/10/21/417a2384-964f-4af9-97b5-2a37164fadd4.png"
-                                                         alt="">
-                                                    <div class="md-margin-bottom-20"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                        =============================================== -->
 
 
                         <p class="text-center">
                             <a class="btn btn-dc btn-main-color" href="http://www.fxbtg-bank.com/NewsAndData/DayNews">更多精彩分析</a>
                         </p>
                     </ul>
-                    </div>
+
+
+                </div>
             </div>
         </div>
     </section>
+
     <!-- ==============================================
     在线统计
     =============================================== -->
@@ -1543,19 +1324,19 @@ HEADER
                 <div class="col-sm-6 col-md-3 text-center">
                     <span class="chart plus-symbol" data-percent="38"><span class="percent">3000M</span></span>
                     <h2 class="text-center">成交量</h2>
-                    </div>
+                </div>
                 <div class="col-sm-6 col-md-3 text-center">
                     <span class="chart plus-symbol go" data-percent="30"><span class="percent">1.2K</span></span>
                     <h2 class="text-center">在线客户量</h2>
-                    </div>
+                </div>
                 <div class="col-sm-6 col-md-3 text-center">
                     <span class="chart equal-symbol" data-percent="25"><span class="percent">46K</span></span>
                     <h2 class="text-center">客户量</h2>
-                    </div>
+                </div>
                 <div class="col-sm-6 col-md-3 text-center">
                     <span class="chart" data-percent="93"><span class="percent">10.6K</span></span>
                     <h2 class="text-center main-color">FXBTG指数价格</h2>
-                    </div>
+                </div>
             </div><!--End row -->
         </div>
     </section>
@@ -1580,38 +1361,31 @@ HEADER
                     <button data-filter=".video" type="button" class="btn btn-default">
                         新闻中心<span class="project-count"></span>
                     </button>
-                    </div>
+                </div>
             </div>
-            </div>
+        </div>
         <div class="container scrollimation fade-up">
             <div id="projects-container" class="row">
-                <a class="project-item col-sm-6 col-md-4 col-lg-3 print" href="#?page6.html">
-                    <img class="img-responsive project-image" src="assets/image/thumb-6.jpg" alt="">
-                    <div class="hover-title">
-                        <h2 class="project-title">同行9载—<br/>感谢一路有你</h2>
-                        <p>入金满额尊享VIP或高级代理2个月，无手数限制！</p>
-                        </div>
-                </a>
                 <a class="project-item col-sm-6 col-md-4 col-lg-3 web" href="#?page2.html">
                     <img class="img-responsive project-image" src="assets/image/thumb-2.jpg" alt="">
                     <div class="hover-title">
                         <h2 class="project-title hang2">FXBTG账户升级</h2><!--Project Title -->
                         <p>FXBTG金融集团为了让客户享受<br/>更好,更便捷的操作体验<br/>针对目前账户体系进行升级</p><!--Project Subtitle -->
-                        </div>
+                    </div>
                 </a>
                 <a class="project-item col-sm-6 col-md-4 col-lg-3 web" href="#?page1.html">
                     <img class="img-responsive project-image" src="assets/image/thumb-4.jpg" alt="">
                     <div class="hover-title">
                         <h2 class="project-title">FXBTG<br/>现在入金即享受10%赠金</h2><!--Project Title -->
                         <p>最高10000美金<br/>入金越多，赠金越多</p><!--Project Subtitle -->
-                        </div>
+                    </div>
                 </a>
                 <a class="project-item col-sm-6 col-md-4 col-lg-3 web" href="#?page3.html">
                     <img class="img-responsive project-image" src="assets/image/thumb-3.jpg" alt="">
                     <div class="hover-title">
                         <h2 class="project-title">TNTV-一家专注于外汇投资的财经频道</h2><!--Project Title -->
                         <p>立即在线收看</p><!--Project Subtitle -->
-                        </div>
+                    </div>
                 </a>
 
 
@@ -1620,7 +1394,7 @@ HEADER
                     <div class="hover-title">
                         <h2 class="project-title hang2 hang">入金送iPhone 7/7 Plus</h2>
                         <p>重新定义一部手机<br/>重新定义一个行业<br/></p>
-                        </div>
+                    </div>
                 </a>
                 <a class="project-item col-sm-6 col-md-4 col-lg-3 print" href="#?page5.html">
                     <img class="img-responsive project-image" src="assets/image/thumb-5.jpg" alt="">
@@ -1629,7 +1403,13 @@ HEADER
                         <p>目前公司的官方网址为：<br/>www.fxbtg-bank.com</p><!--Project Subtitle -->
                     </div>
                 </a>
-
+                <!--   <a class="project-item col-sm-6 col-md-4 col-lg-3 print" href="#?page6.html">
+                       <img class="img-responsive project-image" src="assets/image/thumb-6.jpg" alt="">
+                       <div class="hover-title">
+                           <h2 class="project-title">交易理念—<br/>外汇交易中能够稳定获利的方法</h2>
+                           <p>交易理念分为3大类：<br/>1资金管理；2交易计划；3执行</p>
+                       </div>
+                   </a>-->
                 <a class="project-item col-sm-6 col-md-4 col-lg-3 print" href="#?page7.html">
                     <img class="img-responsive project-image" src="assets/image/thumb-7.jpg" alt="">
                     <div class="hover-title">
@@ -1679,7 +1459,7 @@ HEADER
                 <a class="btn btn-dc btn-main-color"
                    href="http://www.fxbtg-bank.com/NewsAndData/ActiveNewsList">查看更多资讯</a>
             </p>
-            </div>
+        </div>
     </section>
     <!-- ==============================================
     经济日历
@@ -1697,32 +1477,32 @@ HEADER
                 <br>
                 <br>
                 <div class="container">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <a href="index2.html">
-                                    <img class="img-responsive client-logo" src="assets/image/client-logo-1.png"
-                                         alt=""/>
-                                </a>
-                            </div>
-                            <div class="col-sm-3">
-                                <a href="index2.html">
-                                    <img class="img-responsive client-logo" src="assets/image/client-logo-2.png"
-                                         alt=""/>
-                                </a>
-                            </div>
-                            <div class="col-sm-3">
-                                <a href="index2.html">
-                                    <img class="img-responsive client-logo" src="assets/image/client-logo-3.png"
-                                         alt=""/>
-                                </a>
-                            </div>
-                            <div class="col-sm-3">
-                                <a href="index2.html">
-                                    <img class="img-responsive client-logo" src="assets/image/client-logo-4.png"
-                                         alt=""/>
-                                </a>
-                            </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="index2.html">
+                                <img class="img-responsive client-logo" src="assets/image/client-logo-1.png"
+                                     alt=""/>
+                            </a>
                         </div>
+                        <div class="col-sm-3">
+                            <a href="index2.html">
+                                <img class="img-responsive client-logo" src="assets/image/client-logo-2.png"
+                                     alt=""/>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="index2.html">
+                                <img class="img-responsive client-logo" src="assets/image/client-logo-3.png"
+                                     alt=""/>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="index2.html">
+                                <img class="img-responsive client-logo" src="assets/image/client-logo-4.png"
+                                     alt=""/>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <br>
@@ -1788,9 +1568,9 @@ HEADER
                                            href="https://portal.fxbtg-bank.com/Account/Userlogin">立即开户</a>
                                     </div>
                                     <!-- //.plan-footer -->
-                                    </div>
-                                <!-- //.pricing-column -->
                                 </div>
+                                <!-- //.pricing-column -->
+                            </div>
                             <!-- //.pricing-wrapper -->
                             <div class="col-md-4 pricing-wrapper text-center not-right-column  wow fadeIn"
                                  style="opacity: 1;animation-delay:1s;-webkit-animation-delay:1s;">
@@ -1805,7 +1585,7 @@ HEADER
                                             <br/>/ 首次入金
                                             <!-- //.price-info -->
                                         </div>
-                                        </div>
+                                    </div>
                                     <!-- //.plan-title -->
                                     <ul class="item-list">
                                         <li>
@@ -1826,22 +1606,23 @@ HEADER
                                            href="https://portal.fxbtg-bank.com/Account/Userlogin">立即开户</a>
                                     </div>
                                     <!-- //.plan-footer -->
-                                    </div>
-                                <!-- //.pricing-column -->
                                 </div>
+                                <!-- //.pricing-column -->
+                            </div>
                             <!-- //.pricing-wrapper -->
                             <div class="col-md-2 pricing-wrapper text-center wow fadeIn"
                                  style="opacity: 1;animation-delay:1.5s;-webkit-animation-delay:1.5s;">
                                 <!-- //.pricing-column -->
                             </div>
                             <!-- //.pricing-wrapper -->
-                            </div>
-                        <!-- //.row -->
                         </div>
+                        <!-- //.row -->
                     </div>
                 </div>
             </div>
+        </div>
     </section>
+
     <!-- ==============================================
     注册
     =============================================== -->
@@ -1870,7 +1651,7 @@ HEADER
                            data-template='<div class="popover" role="tooltip"><div class="arrow"></div><div id="tableContent"><div class="ma2img"> <img src="assets/image/wx.gif" width="129" height="171" alt=""/></div></div></div>'>
                             <i class="fa fa-weixin"></i>
                         </a>
-                        </div>
+                    </div>
                     <p>
                         <a class="mail-styled"
                            href="https://www.business.govt.nz/fsp/app/ui/fsp/version/searchSummaryCompanyFSP/FSP319786/28.do">执照号:FSP319786</a>
@@ -1884,14 +1665,14 @@ HEADER
                             <input id="name_main" name="contactName" class="form-control requiredField" type="text"
                                    data-error-empty="is required">
                             <label class="control-label" for="contact-name">姓名:</label>
-                            </div>
+                        </div>
                     </div><!-- End name input -->
                     <div class="form-group">
                         <div class="controls">
                             <input id="tel_main" name="contactTel" class="form-control requiredField" type="text"
                                    data-error-empty="is required">
                             <label class="control-label" for="contact-name">请输入手机号码:</label>
-                            </div>
+                        </div>
                     </div><!-- End tel input -->
                     <div class="form-group">
                         <div class="row">
@@ -1909,7 +1690,7 @@ HEADER
                                 </button>
                             </div>
                         </div>
-                        </div>
+                    </div>
                     <P>
                         <label class="p_checkbox">
                             <input id="checkboxWarning" type="checkbox" name="checkbox" checked="checked">
@@ -1928,7 +1709,7 @@ HEADER
                     <input type="hidden" name="submitted" id="submitted" value="true"/>
                 </form><!-- End contact-form -->
             </div>
-            </div>
+        </div>
     </section>
     <!-- ==============================================
     页脚
@@ -1951,9 +1732,9 @@ HEADER
                         <i class="fa fa-long-arrow-right"></i>
                     </span>
             </div>
-            </div>
         </div>
     </div>
+</div>
 <div id="project-viewer2" class="modal fade">
     <span id="close-project-viewer2" data-dismiss="modal">&times;</span>
     <div class="container">
@@ -1969,8 +1750,8 @@ HEADER
                         <i class="fa fa-long-arrow-right"></i>
                     </span>
             </div>
-            </div>
         </div>
+    </div>
 </div><!-- /.modal -->
 <!-- /.modal -->
 <!-- 系统JS框架 -->
@@ -1991,10 +1772,10 @@ HEADER
 <style>
     #about .btn-group .btn {
         padding: 7px 10px;
-        border-color: #b9c4cC;
-        background: 0 0;
-        color: #858a95;
         font-size: 16px;
+        background: none;
+        border-color: #b9c4cC;
+        color: #858a95;
         -webkit-transition: all .2s ease-out;
         transition: all .2s ease-out;
     }
@@ -2003,51 +1784,52 @@ HEADER
         margin-bottom: 30px;
     }
 
+    /* side */
     .side {
         position: fixed;
-        top: 300px;
-        right: 0;
-        z-index: 100;
         width: 54px;
         height: 275px;
+        right: 0;
+        top: 300px;
+        z-index: 100;
     }
 
     .side ul {
-        padding-left: 0;
+        padding-left: 0px;
         list-style-type: none;
     }
 
     .side ul li {
-        position: relative;
-        float: left;
         width: 54px;
         height: 54px;
+        float: left;
+        position: relative;
     }
 
     .side ul li .sidebox {
         position: absolute;
-        right: 0;
-        bottom: 0;
-        overflow: hidden;
         width: 54px;
         height: 54px;
+        bottom: 0;
+        right: 0;
+        transition: all 0.3s;
         background: #000;
+        opacity: 0.8;
+        filter: Alpha(opacity=80);
         color: #fff;
         font: 14px/54px "微软雅黑";
-        opacity: .8;
-        transition: all .3s;
-        filter: Alpha(opacity=80);
+        overflow: hidden;
     }
 
     .side ul li .sidetop {
-        display: inline-block;
         width: 54px;
         height: 54px;
-        background: #000;
         line-height: 54px;
-        opacity: .8;
-        transition: all .3s;
+        display: inline-block;
+        background: #000;
+        opacity: 0.8;
         filter: Alpha(opacity=80);
+        transition: all 0.3s;
     }
 
     .side ul li .sidetop:hover {
@@ -2058,38 +1840,38 @@ HEADER
 
     .side ul li .sidebox2 {
         position: absolute;
-        right: 0;
-        bottom: 0;
-        overflow: hidden;
         width: 54px;
         height: 54px;
+        bottom: 0;
+        right: 0;
+        transition: all 0.3s;
         background: #000;
+        opacity: 0.8;
+        filter: Alpha(opacity=80);
         color: #fff;
         font: 14px/54px "微软雅黑";
-        opacity: .8;
-        transition: all .3s;
-        filter: Alpha(opacity=80);
+        overflow: hidden;
     }
 
     .side ul li .sidebox3 {
         position: absolute;
-        right: 0;
-        bottom: 0;
-        overflow: hidden;
         width: 54px;
         height: 54px;
+        bottom: 0;
+        right: 0;
+        transition: all 0.3s;
         background: #000;
+        opacity: 0.8;
+        filter: Alpha(opacity=80);
         color: #fff;
         font: 14px/54px "微软雅黑";
-        opacity: .8;
-        transition: all .3s;
-        filter: Alpha(opacity=80);
+        overflow: hidden;
     }
 
     .side ul li .sidebox3 span a {
-        padding: 10px 20px;
         background: #000;
         color: #fff;
+        padding: 10px 20px;
     }
 
     .side ul li .sidebox3 span a:hover {
@@ -2142,7 +1924,7 @@ HEADER
 
             <div class="sidebox3">
                 <i class="fa fa-map-signs"
-                       style="font-size: 24px; width: 54px; height: 54px; text-align: center; line-height: 54px;"></i>
+                   style="font-size: 24px; width: 54px; height: 54px; text-align: center; line-height: 54px;"></i>
                 网站导航：<span> <a href="http://www.fxbtg-bank.com/Download">下载中心 </a></span>
                 <span> <a href="http://www.fxbtg-bank.com/NewsAndData/EconomicCalendar">经济日历 </a></span>
                 <span> <a href="http://www.fxbtg-bank.com/NewsAndData/DayNews">每日汇评 </a></span>
@@ -2200,7 +1982,7 @@ HEADER
                 "filter": "Alpha(opacity=80)",
                 "background": "#000"
             });
-            });
+        });
     });
     //回到顶部函数
     function goTop() {
@@ -2217,9 +1999,9 @@ HEADER
     });
     jQuery(".fullSlide").hover(function () {
         jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.2)
-        }, function () {
+    }, function () {
         jQuery(this).find(".prev,.next").fadeOut()
-        });
+    });
 
     window.onscroll = function () {
         var oSearch = document.getElementById("search");
@@ -2233,7 +2015,7 @@ HEADER
             oSearch.style.display = "none";
 
         }
-        }
+    }
 </script>
 </body>
 </html>
