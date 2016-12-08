@@ -2376,7 +2376,11 @@ HEADER
         }
         }
 
-
+    $("#myModal").modal().css({
+        "margin-top": function () {
+            return -($(this).height() / 2);
+        }
+    });
     that.$element.children().eq(0).css("position", "absolute").css({
         "margin": "0px",
         "top": function () {
