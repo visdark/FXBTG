@@ -1,4 +1,7 @@
-﻿﻿﻿<!DOCTYPE html>
+﻿@{
+Layout = null;
+}
+﻿﻿<!DOCTYPE html>
 <html lang="en-US" class="no-js">
 <head>
     <!-- ==============================================a
@@ -202,19 +205,6 @@ HEADER
         <div class="slider-shadow-top"></div>
         <div class="bd">
             <ul>
-                <li style="background:url('assets/image/header-bg4.jpg') no-repeat fixed center top;">
-                    <div class="container">
-
-                        <a href="/Activity/OctoberA" target="_blank">
-
-                            <div class="header-img scrollimation wow fadeInDown d1" style="top: 180px">
-                                <img class="img-responsive" src="assets/image/header-img11.png" alt=""/>
-                            </div>
-
-                        </a>
-                    </div>
-                </li>
-
                 <!-- 首页幻灯（默认推荐位3）开始-->
                 <li style="background:url('assets/image/header-bg.png') no-repeat fixed center top;">
                     <div class="container">
@@ -231,7 +221,7 @@ HEADER
                 </li>
                 <!-- 首页幻灯（默认推荐位3）结束-->
             </ul>
-            </div>
+        </div>
         <a class="prev" href="javascript:void(0)" style="opacity: 0.2; display: none;"><i class="fa fa-angle-left"></i></a>
         <a class="next" href="javascript:void(0)" style="opacity: 0.2; display: none;">
             <i class="fa fa-angle-right icon-lg"></i>
@@ -241,7 +231,7 @@ HEADER
                 <li class="">1</li>
                 <li class="on">2</li>
             </ul>
-            </div>
+        </div>
     </div>
 </header>
 <div class="" id="main-content">
@@ -267,9 +257,9 @@ HEADER
                         <a href="/NewsAndData/ActiveNews/146000">FXBTG关于美国大选交易产品杠杆变更的通知</a>
                     </li>
                 </ol>
-                </div>
+            </div>
         </div>
-        </div>
+    </div>
     <!-- ==============================================
     金融服务
     =============================================== -->
@@ -281,8 +271,8 @@ HEADER
                     <button type="button" href="#front-end" class="btn btn-default toggle-tabs active">上一页</button>
                     <button type="button" href="#back-end" class="btn btn-default toggle-tabs">下一页</button>
                     <button type="button" href="#back-end2" class="btn btn-default toggle-tabs">详情页</button>
-                    </div>
                 </div>
+            </div>
             <div class="tab-content">
                 <div class="row tab-pane active" id="front-end">
                     <div class="col-sm-4 service-item scrollimation fade-left">
@@ -300,7 +290,7 @@ HEADER
                         <h3>OIL</h3>
                         <p>最重要的石油品种，石油产品是快速增长的市场，FXBTG金融提供的石油合约定价透明，大幅度流动性以及易于获得产业信息，保证金比例仅有1%，24小时报价。</p>
                     </div>
-                    </div>
+                </div>
                 <div class="row tab-pane" id="back-end">
                     <div class="col-sm-4 service-item">
                         <div class="service-icon"><i class="fa fa-diamond"></i></div>
@@ -318,7 +308,7 @@ HEADER
                         <h3>能源</h3>
                         <p>能源价格的最典型特征是高波动性,这是政治和环境因素影响的结果，影响力最大的是全球经济增长。 当经济繁荣时，能量需求增加；当经济萧条时，能量消费减少。</p>
                     </div>
-                    </div>
+                </div>
                 <div class="row tab-pane" id="back-end2">
                     <div class="table-responsive">
                         <table class="table">
@@ -339,16 +329,12 @@ HEADER
                                     style="font-size:16px;text-align:center;font-family:微软雅黑;background-color:#FFFFFF;">
                                     最小交易单位
                                 </td>
-                                <td valign="middle"
-                                    style="font-size:16px;text-align:center;font-family:微软雅黑;background-color:#FFFFFF;">
-                                    点值
-                                </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:16px;background-color:#FFFFFF;">
-                                    点差
+                                    点差(浮动)
                                 </td>
                                 <td valign="middle"
                                     style="font-size:16px;text-align:center;font-family:微软雅黑;background-color:#FFFFFF;">
-                                    保证金（浮动）
+                                    保证金
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:16px;background-color:#FFFFFF;">
                                     杠杆比例
@@ -383,10 +369,7 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">10USD</span>
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">3</span>
+                                    <span style="font-weight:bold;color:#FF0000;">4</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     lots*10*market_price*0.01
@@ -395,10 +378,10 @@ HEADER
                                     100.00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 周一01:00 -周五23:15
+                                    <i class="fa fa-clock-o"></i> 01:00 - 24:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 每天23:15 - 23:30
+                                    <i class="fa fa-clock-o"></i> 无
                                 </td>
                             </tr>
                             <tr>
@@ -416,10 +399,7 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">10USD</span>
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">1.3</span>
+                                    <span style="font-weight:bold;color:#FF0000;">1.20</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     lots*10*market_price*0.01
@@ -428,10 +408,10 @@ HEADER
                                     100.00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 周一01:00 -周五23:15
+                                    <i class="fa fa-clock-o"></i> 01:00 - 24:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 每天23:15 - 23:30
+                                    <i class="fa fa-clock-o"></i> 无
                                 </td>
                             </tr>
                             <tr>
@@ -449,10 +429,7 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">10USD</span>
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">2</span>
+                                    <span style="font-weight:bold;color:#FF0000;">1.40</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     lots*10*market_price*0.01
@@ -461,10 +438,10 @@ HEADER
                                     100.00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 周一01:00 -周五23:15
+                                    <i class="fa fa-clock-o"></i> 01:00 - 24:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 每天23:15 - 23:30
+                                    <i class="fa fa-clock-o"></i> 无
                                 </td>
                             </tr>
                             <tr>
@@ -482,13 +459,10 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">10GBP</span>
+                                    <span style="font-weight:bold;color:#FF0000;">3.0</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">3</span>
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    lots*1000*market_price*0.01/usdgbp
+                                    lots*10*market_price*0.01*GBPUSD
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100.00
@@ -515,13 +489,10 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">10EUR</span>
+                                    <span style="font-weight:bold;color:#FF0000;">3.00</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">3</span>
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    lots*1000*market_price*0.01/usdeur
+                                    lots*10*market_price*0.01*EURUSD
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100.00
@@ -548,13 +519,10 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">10EUR</span>
+                                    <span style="font-weight:bold;color:#FF0000;">2.0</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">3</span>
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    lots*1000*market_price*0.01/usdeur
+                                    lots*10*market_price*0.01*EURUSD
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100.00
@@ -571,7 +539,7 @@ HEADER
                                     USOil
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:16px;background-color:#FFFFFF;">
-                                    美油
+                                    美国原油
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     USD
@@ -581,10 +549,7 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">10USD</span>
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">4.5美分</span>
+                                    <span style="font-weight:bold;color:#FF0000;">5.0</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     lots*1000*market_price*0.01
@@ -593,7 +558,7 @@ HEADER
                                     100.00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 01:00 - 23:59
+                                    <i class="fa fa-clock-o"></i> 01:00 - 23:45
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <i class="fa fa-clock-o"></i> 无
@@ -604,7 +569,7 @@ HEADER
                                     UKOil
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:16px;background-color:#FFFFFF;">
-                                    原油
+                                    布伦特原油（英国原油）
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     USD
@@ -614,10 +579,7 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">10USD</span>
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">5美分</span>
+                                    <span style="font-weight:bold;color:#FF0000;">5.0</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     lots*1000*market_price*0.01
@@ -626,7 +588,7 @@ HEADER
                                     100.00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 03:00 - 23:59
+                                    <i class="fa fa-clock-o"></i> 03:00 - 23:45
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <i class="fa fa-clock-o"></i> 无
@@ -647,13 +609,10 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">1000JPY</span>
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <span style="font-weight:bold;color:#FF0000;">8</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    lots*1000*market_price*0.01/usdjpy
+                                    lots*1000*market_price*0.01/USDJPY
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100.00
@@ -680,13 +639,10 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">100HKD</span>
+                                    <span style="font-weight:bold;color:#FF0000;">5</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">3	</span>
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    lots*300*market_price*0.01/usdcnh
+                                    lots*100*market_price*0.01/USDHKD
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100.00
@@ -713,22 +669,19 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">300CNH</span>
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <span style="font-weight:bold;color:#FF0000;">6</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    3000美金左右
+                                    lots*300*market_price*0.01/USDCNH
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100.00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 04:30 - 06:30,08:00 - 10:00
+                                    <i class="fa fa-clock-o"></i> 03:30 - 09:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 6:30: - 08:00
+                                    <i class="fa fa-clock-o"></i> 05:30 - 07:00
                                 </td>
                             </tr>
                             <tr>
@@ -752,19 +705,15 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">100盎司</span>
+                                    <span style="font-weight:bold;color:#FF0000;">4.5</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">4.50	</span>
+                                    1000
                                 </td>
+                                <td valign="middle"
+                                    style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;"></td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    1/1000
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    100.00
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 01:00-23:59
+                                    <i class="fa fa-clock-o"></i> 01:00 - 24:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <i class="fa fa-clock-o"></i> 无
@@ -785,19 +734,15 @@ HEADER
                                     0.01
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">5000盎司</span>
+                                    <span style="font-weight:bold;color:#FF0000;">3.0</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">4.00	</span>
+                                    1000
                                 </td>
+                                <td valign="middle"
+                                    style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;"></td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    1/500
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    100.00
-                                </td>
-                                <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 01:00 - 23:59
+                                    <i class="fa fa-clock-o"></i> 01:00 - 24:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <i class="fa fa-clock-o"></i> 无
@@ -823,19 +768,17 @@ HEADER
                                     style="text-align:center;font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     0.01
                                 </td>
-                                <td valign="middle"
-                                    style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;"></td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">2.20	</span>
+                                    <span style="font-weight:bold;color:#FF0000;">2.2</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    1/1000
+                                    lots*100000/leverage
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100\200\400
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 0:05 - 23:59
+                                    <i class="fa fa-clock-o"></i> 0:05 - 24:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <i class="fa fa-clock-o"></i> 无
@@ -855,19 +798,17 @@ HEADER
                                     style="text-align:center;font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     0.01
                                 </td>
-                                <td valign="middle"
-                                    style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;"></td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">1.90	</span>
+                                    <span style="font-weight:bold;color:#FF0000;">2.1</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    1/1000
+                                    lots*100000/leverage
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100\200\400
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 0:05 - 23:59
+                                    <i class="fa fa-clock-o"></i> 0:05 - 24:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <i class="fa fa-clock-o"></i> 无
@@ -887,19 +828,17 @@ HEADER
                                     style="text-align:center;font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     0.01
                                 </td>
-                                <td valign="middle"
-                                    style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;"></td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">2.20	</span>
+                                    <span style="font-weight:bold;color:#FF0000;">2.2</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    1/1000
+                                    lots*100000/leverage
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100\200\400
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 0:05 - 23:59
+                                    <i class="fa fa-clock-o"></i> 0:05 - 24:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <i class="fa fa-clock-o"></i> 无
@@ -919,19 +858,17 @@ HEADER
                                     style="text-align:center;font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     0.01
                                 </td>
-                                <td valign="middle"
-                                    style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;"></td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">2.40	</span>
+                                    <span style="font-weight:bold;color:#FF0000;">2.4</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    1/1000
+                                    lots*100000/leverage
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100\200\400
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 0:05 - 23:59
+                                    <i class="fa fa-clock-o"></i> 0:05 - 24:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <i class="fa fa-clock-o"></i> 无
@@ -951,19 +888,17 @@ HEADER
                                     style="text-align:center;font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     0.01
                                 </td>
-                                <td valign="middle"
-                                    style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;"></td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">2.30	</span>
+                                    <span style="font-weight:bold;color:#FF0000;">2.3</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    1/1000
+                                    lots*100000/leverage
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100\200\400
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 0:05 - 23:59
+                                    <i class="fa fa-clock-o"></i> 0:05 - 24:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <i class="fa fa-clock-o"></i> 无
@@ -983,19 +918,17 @@ HEADER
                                     style="text-align:center;font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     0.01
                                 </td>
-                                <td valign="middle"
-                                    style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;"></td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">2.50	</span>
+                                    <span style="font-weight:bold;color:#FF0000;">2.7</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    1/1000
+                                    lots*100000/leverage
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100\200\400
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 0:05 - 23:59
+                                    <i class="fa fa-clock-o"></i> 0:05 - 24:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <i class="fa fa-clock-o"></i> 无
@@ -1015,19 +948,17 @@ HEADER
                                     style="text-align:center;font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     0.01
                                 </td>
-                                <td valign="middle"
-                                    style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;"></td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <span style="font-weight:bold;color:#FF0000;">2.60	</span>
+                                    <span style="font-weight:bold;color:#FF0000;">2.6</span>
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    1/1000
+                                    lots*100000/leverage
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     100\200\400
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
-                                    <i class="fa fa-clock-o"></i> 0:05 - 23:59
+                                    <i class="fa fa-clock-o"></i> 0:05 - 24:00
                                 </td>
                                 <td valign="middle" style="font-family:微软雅黑;font-size:14px;background-color:#FFFFFF;">
                                     <i class="fa fa-clock-o"></i> 无
@@ -1040,9 +971,9 @@ HEADER
                         EXCEL格式
                     </a> | <a href="jycp.pdf"><i class="fa fa-file-pdf-o"></i> PDF格式</a>
                     </div>
-                    </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- ==============================================
     交易平台
@@ -1061,7 +992,7 @@ HEADER
 
                     <p>
                         <a href="http://static.fxbtg-bank.com/CN/clientdown/FXBTG-MT4.exe" class="pc_button"></a>
-                        <a href="http://static.fxbtg-bank.com/CN/clientdown/FXBTG-MT4.zip" class="pc2_button"></a>
+                        <a href="https://dn-btgfiles.qbox.me/fxbtg-mt4.zip" class="pc2_button"></a>
                         <br/>
                         <a class="btn btn-dc btn-small btn-main-color"
                            href="http://www.fxbtg-bank.com/Flv/advVideo/XMTY5OTcwNDg5Ng==">查看使用教程</a>
@@ -1070,7 +1001,7 @@ HEADER
                 <div class="col-sm-6 col-sm-offset-1 scrollimation wow fadeInLeft">
                     <img class="img-responsive" src="assets/image/featured-2.png" alt=""/>
                 </div>
-                </div>
+            </div>
             <hr>
             <div class="row">
                 <div class="col-sm-6 col-sm-push-6 push-down scrollimation wow fadeInLeft">
@@ -1100,7 +1031,7 @@ HEADER
                 <div class="col-sm-6 col-sm-pull-6 scrollimation wow fadeInRight">
                     <img class="img-responsive" src="assets/image/featured-1.png" alt=""/>
                 </div>
-                </div>
+            </div>
             <hr>
             <div class="row hidden-xs">
                 <div class="col-sm-12">
@@ -1127,50 +1058,50 @@ HEADER
                                         <img alt="" src="assets/image/tws_icon8.png">
                                         <p>出现黄灰界面，<br>点击右上角"+"号</p>
                                     </div>
-                                    </div>
                                 </div>
+                            </div>
                             <div class="col-sm-4 col-md-2">
                                 <div class="tws_div tws_div2 tws_three">
                                     <div class="tws_nei">
                                         <img alt="" src="assets/image/tws_icon6.png">
                                         <p>点击<br>“登录一个已有账户”</p>
                                     </div>
-                                    </div>
                                 </div>
+                            </div>
                             <div class="col-sm-4 col-md-2">
                                 <div class="tws_div tws_div2 tws_four">
                                     <div class="tws_nei">
                                         <img alt="" src="assets/image/tws_icon5.png">
                                         <p>在“输入公司或<br>服务器名称”<br>处输入“FXBTG”</p>
                                     </div>
-                                    </div>
                                 </div>
+                            </div>
                             <div class="col-sm-4 col-md-2">
                                 <div class="tws_div tws_div2 tws_five">
                                     <div class="tws_nei">
                                         <img alt="" src="assets/image/tws_icon2.png">
                                         <p>真实账户选择<br>FXBTG-MAIN</p>
                                     </div>
-                                    </div>
                                 </div>
+                            </div>
                             <div class="col-sm-4 col-md-2">
                                 <div class="tws_div tws_div2 tws_six">
                                     <div class="tws_nei">
                                         <img alt="" src="assets/image/tws_icon3.png">
                                         <p>输入账号密码登陆，<br>登录成功</p>
                                     </div>
-                                    </div>
                                 </div>
-
                             </div>
-
 
                         </div>
 
 
                     </div>
+
+
                 </div>
             </div>
+        </div>
     </section>
     <!-- ==============================================
     视频广告
@@ -1203,18 +1134,19 @@ HEADER
                     <ul class="timeline-v2">
                         <li class="equal-height-columns">
                             <div class="cbp_tmtime equal-height-column" style="height: 162px;">
-                                <span>17年1月12日</span>
+                                <span>17年1月16日</span>
                                 <span>January 2017</span>
-                                </div>
+                            </div>
                             <i class="cbp_tmicon rounded-x hidden-xs"></i>
                             <div class="cbp_tmlabel equal-height-column" style="height: 192px;">
-                                <h2>FXBTG:特朗普记者会美元受伤，避险买盘推动金价飙升</h2>
+                                <h2>FXBTG:英镑再次成为众矢之的</h2>
                                 <h3>行情回顾</h3>
                                 <p>
-                                    备受关注的特朗普记者会于今日凌晨如期举行，受其言论带来的不确定性影响，美元指数尽吐日内升幅并刷新月度低位，各主要非美货币也随之上演过山车行情；黄金价格则受到避险买盘推动而再创高位，逼近1200点整数关口；原油方面虽美国上周EIA库存数据出现增加，但受沙特2月份削减对亚洲客户的原油供应提振了市场对减产协议前景的信心，油价出现较大幅度回升。</p>
+                                    美元兑一篮子货币上周五（1月13日）小幅下跌，势将创下11月初以来表现最差的一周，因鲜有美国当选总统特朗普经济政策的新信息，交易商愈发感到不安。美元/日元上周五早些时候后曾一度上涨0.6%，但最终回吐涨幅收在平盘附近。英镑兑美元今日（1月16日）开盘大跌约200个点至1.1990，跌幅超过1%。
+                                </p>
                                 <h3>市场概况</h3>
                                 <p>
-                                    美元指数昨日冲高后大幅回落，盘中最低曾触及101.24，目前报101.65，日内存在继续盘跌测试下方101.30一线支撑可能；后市若能于101.30——100.80区域出现止跌企稳，则存在再度回升可能。基本面方面后市不仅要关注美国主要经济数据以及美联储方面相关言论，也要对特朗普登台后的政策推行进行关注。p>
+                                    据《泰晤士报》报道，特朗普接受采访时表示，很乐意看到英国脱欧，英国脱欧最后将成为一件很棒的事情。除此之外，英国首相特里莎·梅将于周二公布“硬脱欧”计划。受这一重大风险事件的影响，今天（1月16日）英镑开盘全线跳崖式暴跌，跌幅超过1%，其中，英镑兑美元一度跌近200点最低触及1.1986，英镑兑日元跌近280点最低触及136.81，欧元兑英镑涨近130点最高触及0.8854。</p>
                                 <h3>图表分析</h3>
                                 <!-- ##第二区 服务项目 开始-->
                                 <div class="text-center">
@@ -1237,72 +1169,87 @@ HEADER
                                         </button>
 
 
-                                        </div>
                                     </div>
+                                </div>
                                 <div class="tab-content">
                                     <div class="row tab-pane active" id="tu11">
                                         <div class="col-md-8">
                                             <p>EUR/USD</p>
                                             <P>
-                                                欧元4小时图显示昨日汇价先抑后扬，最终以长下影阳线收盘，后市存在再度盘升上测1.0630一线压力可能；日内可考虑于区间1.0630——1.0540内短线高抛低吸，止损区间外侧；保守操作这也可先行观望，等待价格走出调整区间后再行入场。</P>
+                                                欧元<BR/>H4周期：价格处于震荡走势，关注1.0684位置的得失；
+                                                M30周期：短期价格处于盘整走势，盘整区间为1.0595—1.0684；
+                                                建议策略：依据M30图表，短期价格有效突破1.0684，短线进场做多；
+                                                备选策略：短期价格有效跌破1.0595，短线进场做空。
+                                            </P>
                                         </div>
                                         <div class="col-md-4">
                                             <img class="img-responsive"
-                                                 src="https://static.fxbtg-bank.com/UploadImages/2017/1/12/99588182-9fdd-4062-a633-309db3bf48f8.png"
+                                                 src="https://static.fxbtg-bank.com/UploadImages/2017/1/16/242cf9da-23b8-419c-a9d1-09210c982cbd.png"
                                                  alt="">
                                             <div class="md-margin-bottom-20"></div>
                                         </div>
-                                        </div>
+                                    </div>
                                     <div class="row tab-pane" id="tu12">
                                         <div class="col-md-8">
                                             <p>GBP/USD</p>
                                             <P>
-                                                英镑4小时显示昨日汇价盘中曾一度下至1.2100下方，但未形成有效下破；目前价格重回1.2200——1.2100整理区间内部，激进操作者可考虑于1.2200下方逢高空单介入，止损1.2200之上，后市关注下方1.2100位置是否会出现有效突破；保守交易者可暂时观望。</P>
+                                                英镑<BR/>H4周期：价格周开盘跳空低开，并在1.2082下方企稳，后市看空；
+                                                M30周期：价格低开之后，回调还是回补，需密切关注；
+                                                建议策略：依据M30周期图表，若价格运行至1.2082—1.2119区域，短线进场做空；
+                                                备选策略：无。</P>
                                         </div>
                                         <div class="col-md-4">
                                             <img class="img-responsive"
-                                                 src="https://static.fxbtg-bank.com/UploadImages/2017/1/12/82907bb2-0451-415c-a58e-8b1099503851.png"
+                                                 src="https://static.fxbtg-bank.com/UploadImages/2017/1/16/e0d1336c-5015-4f96-bb86-477dff99627f.png"
                                                  alt="">
                                             <div class="md-margin-bottom-20"></div>
                                         </div>
-                                        </div>
+                                    </div>
                                     <div class="row tab-pane" id="tu13">
                                         <div class="col-md-8">
                                             <p>USDJPY</p>
-                                            <P>
-                                                日元4小时图显示昨日汇价整体震荡走低，日内存在继续盘跌下测114.70——114.30小区域支撑可能，但后市价格若于下方出现企稳，不排除再度走高可能，建议日内以观望为主。</P>
+                                            <P>日元<BR/>H4周期：价格处于震荡走势，震荡区间为113.73—115.15；
+                                                M30周期：短期价格处于下跌之后的回调，等待回调结束后的空头交易机会；
+                                                建议策略：依据M30图表，价格运行至114.00—114.65区域，短线进场做空；
+                                                备选策略：价格有效突破114.65，则以观望为主。</P>
                                             <!-- <P>交易策略：保持短期多头思路，利用市价回落支撑区域介入多头。</P>-->
                                         </div>
                                         <div class="col-md-4">
                                             <img class="img-responsive"
-                                                 src="https://static.fxbtg-bank.com/UploadImages/2017/1/12/81caf355-58ae-4e7e-872f-b394b2e9e6a9.png"
+                                                 src="https://static.fxbtg-bank.com/UploadImages/2017/1/16/7bdce517-55ac-4568-8a78-08032ff0b1da.png"
                                                  alt="">
                                             <div class="md-margin-bottom-20"></div>
                                         </div>
-                                        </div>
+                                    </div>
 
                                     <div class="row tab-pane" id="tu14">
                                         <div class="col-md-8">
                                             <p>XAU/USD</p>
                                             <P>
-                                                黄金4小时图显示昨日价格回落受撑于1180一线之后出现强势拉升，目前报1195.8美元/盎司，后市存在继续盘升测试上方1200关键价位可能，若价格有效占据1200一线，后市将延续走高；日内操作可考虑于1190上方逢低进多，下破止损，上方关注1200——1210区域。</P>
+                                                黄金<BR/>H4周期：价格回调结束，重启上涨走势；
+                                                M30周期：短期价格处于上涨走势，关注1205.8位置的表现；
+                                                建议策略：依据M30图表，若价格回调运行至1197.0—1120.0区域或有效突破1206.8，短线进场做多；
+                                                备选策略：若价格下跌并有效跌破1197.0，则进入观望阶段。</P>
                                         </div>
                                         <div class="col-md-4">
                                             <img class="img-responsive"
-                                                 src="https://static.fxbtg-bank.com/UploadImages/2017/1/12/baa46c5e-eb80-4dc2-a260-bda14399e75c.png"
+                                                 src="https://static.fxbtg-bank.com/UploadImages/2017/1/16/04ed914b-882c-4994-be68-9a8e79dddcd2.png"
                                                  alt="">
                                             <div class="md-margin-bottom-20"></div>
                                         </div>
-                                        </div>
+                                    </div>
                                     <div class="row tab-pane" id="tu15">
                                         <div class="col-md-8">
                                             <p>USOil</p>
                                             <P>
-                                                美原油4小时图显示昨日油价受撑于50.60一线出现大幅回升，日内经过短线调整之后可能会继续盘升上测压力，可考虑于下方51.60之上逢低进多，下破止损离场，后市上方可首先关注53.20一线压力。</P>
+                                                美原油<BR/>H4周期：价格处于盘整区间内的上涨走势；
+                                                M30周期：短期价格虽处于震荡走势，震荡区间52.1—53.5；
+                                                建议策略：依据M30周期图表，若价格运行至52.10—52.40，短线进场做多；
+                                                备选策略：若价格有效跌破52.10，则进场做空。</P>
                                         </div>
                                         <div class="col-md-4">
                                             <img class="img-responsive"
-                                                 src="https://static.fxbtg-bank.com/UploadImages/2017/1/12/cc705917-1d33-47cb-9a96-aaeff0d41563.png"
+                                                 src="https://static.fxbtg-bank.com/UploadImages/2017/1/16/564d0eb9-f437-4fc2-b7b6-07206a1fc65b.png"
                                                  alt="">
                                             <div class="md-margin-bottom-20"></div>
                                         </div>
@@ -1314,9 +1261,9 @@ HEADER
                             <a class="btn btn-dc btn-main-color" href="http://www.fxbtg-bank.com/NewsAndData/DayNews">更多精彩分析</a>
                         </p>
                     </ul>
-                    </div>
+                </div>
             </div>
-            </div>
+        </div>
     </section>
     <!-- ==============================================
     在线统计
@@ -1327,19 +1274,19 @@ HEADER
                 <div class="col-sm-6 col-md-3 text-center">
                     <span class="chart plus-symbol" data-percent="38"><span class="percent">3000M</span></span>
                     <h2 class="text-center">成交量</h2>
-                    </div>
+                </div>
                 <div class="col-sm-6 col-md-3 text-center">
                     <span class="chart plus-symbol go" data-percent="30"><span class="percent">1.2K</span></span>
                     <h2 class="text-center">在线客户量</h2>
-                    </div>
+                </div>
                 <div class="col-sm-6 col-md-3 text-center">
                     <span class="chart equal-symbol" data-percent="25"><span class="percent">46K</span></span>
                     <h2 class="text-center">客户量</h2>
-                    </div>
+                </div>
                 <div class="col-sm-6 col-md-3 text-center">
                     <span class="chart" data-percent="93"><span class="percent">10.6K</span></span>
                     <h2 class="text-center main-color">FXBTG指数价格</h2>
-                    </div>
+                </div>
             </div><!--End row -->
         </div>
     </section>
@@ -1364,9 +1311,9 @@ HEADER
                     <button data-filter=".video" type="button" class="btn btn-default">
                         新闻中心<span class="project-count"></span>
                     </button>
-                    </div>
+                </div>
             </div>
-            </div>
+        </div>
         <div class="container scrollimation fade-up">
             <div id="projects-container" class="row">
                 <a class="project-item col-sm-6 col-md-4 col-lg-3 print" href="#?page6.html">
@@ -1374,28 +1321,21 @@ HEADER
                     <div class="hover-title">
                         <h2 class="project-title">同行9载—<br/>感谢一路有你</h2>
                         <p>入金满额尊享VIP或高级代理2个月，无手数限制！</p>
-                        </div>
+                    </div>
                 </a>
-                <a class="project-item col-sm-6 col-md-4 col-lg-3 web" href="#?page2.html">
-                    <img class="img-responsive project-image" src="assets/image/thumb-2.jpg" alt="">
-                    <div class="hover-title">
-                        <h2 class="project-title hang2">FXBTG账户升级</h2><!--Project Title -->
-                        <p>FXBTG金融集团为了让客户享受<br/>更好,更便捷的操作体验<br/>针对目前账户体系进行升级</p><!--Project Subtitle -->
-                        </div>
-                </a>
-                <a class="project-item col-sm-6 col-md-4 col-lg-3 web link" href="/NewsAndData/CompanyNews/146020">
+                <a class="project-item col-sm-6 col-md-4 col-lg-3 web" href="#?page1.html">
                     <img class="img-responsive project-image" src="assets/image/thumb-4.jpg" alt="">
                     <div class="hover-title">
-                        <h2 class="project-title">FXBTG<br/>关于挂单长期有效的通知</h2><!--Project Title -->
-                        <p></p><!--Project Subtitle -->
-                        </div>
+                        <h2 class="project-title">FXBTG<br/>现在入金即享受10%赠金</h2><!--Project Title -->
+                        <p>最高10000美金<br/>入金越多，赠金越多</p><!--Project Subtitle -->
+                    </div>
                 </a>
                 <a class="project-item col-sm-6 col-md-4 col-lg-3 web" href="#?page3.html">
                     <img class="img-responsive project-image" src="assets/image/thumb-3.jpg" alt="">
                     <div class="hover-title">
                         <h2 class="project-title">TNTV-一家专注于外汇投资的财经频道</h2><!--Project Title -->
                         <p>立即在线收看</p><!--Project Subtitle -->
-                        </div>
+                    </div>
                 </a>
                 <div class="clearfix"></div>
 
@@ -1404,7 +1344,7 @@ HEADER
                     <div class="hover-title">
                         <h2 class="project-title hang2 hang">入金送iPhone 7/7 Plus</h2>
                         <p>重新定义一部手机<br/>重新定义一个行业<br/></p>
-                        </div>
+                    </div>
                 </a>
                 <a class="project-item col-sm-6 col-md-4 col-lg-3 print" href="#?page5.html">
                     <img class="img-responsive project-image" src="assets/image/thumb-5.jpg" alt="">
@@ -1463,7 +1403,7 @@ HEADER
                 <a class="btn btn-dc btn-main-color"
                    href="http://www.fxbtg-bank.com/NewsAndData/ActiveNewsList">查看更多资讯</a>
             </p>
-            </div>
+        </div>
     </section>
     <!-- ==============================================
     经济日历
@@ -1481,40 +1421,40 @@ HEADER
                 <br>
                 <br>
                 <div class="container">
-                        <div class="row">
-                            <div class="col-sm-3">
-                                <a href="index2.html">
-                                    <img class="img-responsive client-logo" src="assets/image/client-logo-1.png"
-                                         alt=""/>
-                                </a>
-                            </div>
-                            <div class="col-sm-3">
-                                <a href="index2.html">
-                                    <img class="img-responsive client-logo" src="assets/image/client-logo-2.png"
-                                         alt=""/>
-                                </a>
-                            </div>
-                            <div class="col-sm-3">
-                                <a href="index2.html">
-                                    <img class="img-responsive client-logo" src="assets/image/client-logo-3.png"
-                                         alt=""/>
-                                </a>
-                            </div>
-                            <div class="col-sm-3">
-                                <a href="index2.html">
-                                    <img class="img-responsive client-logo" src="assets/image/client-logo-4.png"
-                                         alt=""/>
-                                </a>
-                            </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="index2.html">
+                                <img class="img-responsive client-logo" src="assets/image/client-logo-1.png"
+                                     alt=""/>
+                            </a>
                         </div>
+                        <div class="col-sm-3">
+                            <a href="index2.html">
+                                <img class="img-responsive client-logo" src="assets/image/client-logo-2.png"
+                                     alt=""/>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="index2.html">
+                                <img class="img-responsive client-logo" src="assets/image/client-logo-3.png"
+                                     alt=""/>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="index2.html">
+                                <img class="img-responsive client-logo" src="assets/image/client-logo-4.png"
+                                     alt=""/>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                </div>
+            </div>
             <br>
             <br>
             <br>
             <br>
             <a class="btn btn-dc btn-white" href="index2.html">了解详情</a>
-            </div>
+        </div>
     </section>
     <!-- ==============================================
     账户类型
@@ -1573,9 +1513,9 @@ HEADER
                                            href="https://portal.fxbtg-bank.com/Account/Userlogin">立即开户</a>
                                     </div>
                                     <!-- //.plan-footer -->
-                                    </div>
-                                <!-- //.pricing-column -->
                                 </div>
+                                <!-- //.pricing-column -->
+                            </div>
                             <!-- //.pricing-wrapper -->
                             <div class="col-md-4 pricing-wrapper text-center not-right-column  wow fadeIn"
                                  style="opacity: 1;animation-delay:1s;-webkit-animation-delay:1s;">
@@ -1590,7 +1530,7 @@ HEADER
                                             <br/>/ 首次入金
                                             <!-- //.price-info -->
                                         </div>
-                                        </div>
+                                    </div>
                                     <!-- //.plan-title -->
                                     <ul class="item-list">
                                         <li>
@@ -1612,21 +1552,21 @@ HEADER
                                            href="https://portal.fxbtg-bank.com/Account/Userlogin">立即开户</a>
                                     </div>
                                     <!-- //.plan-footer -->
-                                    </div>
-                                <!-- //.pricing-column -->
                                 </div>
+                                <!-- //.pricing-column -->
+                            </div>
                             <!-- //.pricing-wrapper -->
                             <div class="col-md-2 pricing-wrapper text-center wow fadeIn"
                                  style="opacity: 1;animation-delay:1.5s;-webkit-animation-delay:1.5s;">
                                 <!-- //.pricing-column -->
                             </div>
                             <!-- //.pricing-wrapper -->
-                            </div>
-                        <!-- //.row -->
                         </div>
+                        <!-- //.row -->
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- ==============================================
     注册
@@ -1640,7 +1580,7 @@ HEADER
                         风险警告：<br/>
                         所有使用保证金交易的金融产品都具有高风险。它们并非适合所有投资者，您的损失可能超过您的初始投资金额。请确认您完全了解相关风险，如有需要，请寻求专业意见。
                         FXBTG Financial Limited 在Financial Service Providers Register 注册（执照号：FSP319786）
-                        @2002-2016 FXBTG Global 版权所有
+                        @@2002-2016 FXBTG Global 版权所有
                     </p>
                     <p>
                         FXBTG Financial Limited是新西兰金融纠纷解决服务FDR成员，遵循《2008年金融服务提供商（注册和争议解决）法》，详情请参考 <a
@@ -1662,7 +1602,7 @@ HEADER
                            data-template='<div class="popover" role="tooltip"><div class="arrow"></div><div id="tableContent"><div class="ma2img"> <img src="assets/image/wx.gif" width="129" height="171" alt=""/></div></div></div>'>
                             <i class="fa fa-weixin"></i>
                         </a>
-                        </div>
+                    </div>
                     <p>
                         <a class="mail-styled"
                            href="https://www.business.govt.nz/fsp/app/ui/fsp/version/searchSummaryCompanyFSP/FSP319786/28.do">执照号:FSP319786</a>
@@ -1676,32 +1616,32 @@ HEADER
                             <input id="name_main" name="contactName" class="form-control requiredField" type="text"
                                    data-error-empty="is required">
                             <label class="control-label" for="contact-name">姓名:</label>
-                            </div>
+                        </div>
                     </div><!-- End name input -->
                     <div class="form-group">
                         <div class="controls">
                             <input id="tel_main" name="contactTel" class="form-control requiredField" type="text"
                                    data-error-empty="is required">
                             <label class="control-label" for="contact-name">请输入手机号码:</label>
-                            </div>
+                        </div>
                     </div><!-- End tel input -->
                     <div class="form-group">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="controls">
-                                    <input id="code_main" name="email" class="form-control requiredField" type="email"
+                                    <input id="code_main" name="code" class="form-control requiredField" type="text"
                                            data-error-empty="is required" data-error-invalid="is invalid">
                                     <label class="control-label" for="contact-mail">请输入注册码:</label>
                                 </div>
-                                </div>
+                            </div>
                             <div class="col-sm-6">
                                 <button id="btn_code_main" class="btn btn-primary btn-lg btn-block"
                                         STYLE="line-height: 42px">
                                     点击发送验证码
                                 </button>
                             </div>
-                            </div>
                         </div>
+                    </div>
                     <P>
                         <label class="p_checkbox">
                             <input id="checkboxWarning" type="checkbox" name="checkbox" checked="checked">
@@ -1720,7 +1660,7 @@ HEADER
                     <input type="hidden" name="submitted" id="submitted" value="true"/>
                 </form><!-- End contact-form -->
             </div>
-            </div>
+        </div>
     </section>
     <!-- ==============================================
     页脚
@@ -1743,9 +1683,9 @@ HEADER
                         <i class="fa fa-long-arrow-right"></i>
                     </span>
             </div>
-            </div>
         </div>
     </div>
+</div>
 <div id="project-viewer2" class="modal fade">
     <span id="close-project-viewer2" data-dismiss="modal">&times;</span>
     <div class="container">
@@ -1761,8 +1701,8 @@ HEADER
                         <i class="fa fa-long-arrow-right"></i>
                     </span>
             </div>
-            </div>
         </div>
+    </div>
 </div><!-- /.modal -->
 <!-- /.modal -->
 <!-- 系统JS框架 -->
@@ -1784,7 +1724,7 @@ HEADER
             </div>
         </div><!-- /.modal-content -->
     </div>
-    </div>
+</div>
 
 
 <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
@@ -1798,7 +1738,7 @@ HEADER
 <script src="assets/js/messenger.js"></script>
 <script src="assets/js/messenger-theme-flat.js"></script>
 <script src="assets/js/scripts.js?v=2016080314"></script>
-<script src="assets/js/page.js?v=2016122310"></script>
+<script src="assets/js/page.js?v=2016122311"></script>
 
 
 <!-- 代码部分begin -->
@@ -1960,7 +1900,7 @@ HEADER
 
             <div class="sidebox3">
                 <i class="fa fa-map-signs"
-                       style="font-size: 24px; width: 54px; height: 54px; text-align: center; line-height: 54px;"></i>
+                   style="font-size: 24px; width: 54px; height: 54px; text-align: center; line-height: 54px;"></i>
                 网站导航：<span> <a href="http://www.fxbtg-bank.com/Download">下载中心 </a></span>
                 <span> <a href="http://www.fxbtg-bank.com/NewsAndData/EconomicCalendar">经济日历 </a></span>
                 <span> <a href="http://www.fxbtg-bank.com/NewsAndData/DayNews">每日汇评 </a></span>
@@ -2018,7 +1958,7 @@ HEADER
                 "filter": "Alpha(opacity=80)",
                 "background": "#000"
             });
-            });
+        });
     });
     //回到顶部函数
     function goTop() {
@@ -2035,9 +1975,9 @@ HEADER
     });
     jQuery(".fullSlide").hover(function () {
         jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.2)
-        }, function () {
+    }, function () {
         jQuery(this).find(".prev,.next").fadeOut()
-        });
+    });
 
     window.onscroll = function () {
         var oSearch = document.getElementById("search");
@@ -2051,11 +1991,10 @@ HEADER
             oSearch.style.display = "none";
 
         }
-        }
+    }
 
 
 </script>
-1
 <!-- WPA Button Begin -->
 <script charset="utf-8" type="text/javascript"
         src="http://static.b.qq.com/account/bizqq/js/wpa.js?wty=1&type=11&kfuin=4008882660&ws=www.fxbtg-bank.com&title=FXBTG%E5%9C%A8%E7%BA%BF%E5%AE%A2%E6%9C%8D&cot=%E5%B0%8A%E6%95%AC%E7%9A%84%E7%94%A8%E6%88%B7%3A%0A%E6%82%A8%E5%A5%BD%EF%BC%8C%E8%AF%B7%E9%97%AE%E6%9C%89%E4%BB%80%E4%B9%88%E5%8F%AF%E4%BB%A5%E5%B8%AE%E5%88%B0%E6%82%A8%EF%BC%9F%0A%E6%9C%8D%E5%8A%A1%E6%97%B6%E9%97%B4%EF%BC%9A%E5%91%A8%E4%B8%80%E8%87%B3%E5%91%A8%E4%BA%949%3A00-01%3A00&btn1=QQ%E4%BA%A4%E8%B0%88&btn2=%E4%B8%8B%E6%AC%A1%E5%86%8D%E8%AF%B4&fsty=0&fposX=1&fposY=1&csty=7&tx=1&aty=0&a=&key=XzkzODA3NjQwOV8xNzk1NTBfNDAwODg4MjY2MF8"></script>
